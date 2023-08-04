@@ -16,6 +16,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  
+  padding: 8px;
 }
 
 input {
@@ -24,4 +26,38 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/*Changes begin here:*/
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex: 1 1 0;/*Grow, shrink and basis*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-left:0;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.footer{
+  background-color: #eeeeee;
 }
